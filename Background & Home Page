@@ -1,0 +1,80 @@
+// Background Color ¯\_(ツ)_/¯ 
+import SwiftUI
+
+struct BackGround: View {
+
+    var body: some View {
+        
+        ZStack{
+            
+        LinearGradient(gradient: /*@START_MENU_TOKEN@*/Gradient(colors: [Color.red, Color.blue])/*@END_MENU_TOKEN@*/, startPoint: .top, endPoint: .bottom)
+            
+            
+        }
+        
+    }
+}
+
+struct BackGround_Previews: PreviewProvider {
+    static var previews: some View {
+        BackGround()
+    }
+}
+
+// Home Page ¯\_(ツ)_/¯ 
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+    
+        ZStack{
+            
+            
+            
+            
+            //background Color
+            BackGround()
+
+            
+                
+                
+                
+            
+            
+            
+            
+            VStack(){
+                
+       
+        //Logo & Subheadline
+        Image("MLL2").scaledToFit().shadow(radius: 10)
+            .offset(y:-325)
+            .offset(x: -150)
+       
+           
+            .padding(.vertical)
+
+                        
+            
+                Text("MLHS GPS")
+                    .font(.subheadline)
+                    .fontWeight(.bold)
+                    .shadow(color: .blue, radius: 0.1, x:2, y: 2)
+                        .offset(y:-325)
+                        .offset(x:-150)
+                
+    
+        
+        } .padding()
+    
+        }
+        
+        
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
